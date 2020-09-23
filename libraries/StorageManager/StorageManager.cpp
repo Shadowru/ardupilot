@@ -55,8 +55,8 @@ const StorageManager::StorageArea StorageManager::layout[STORAGE_NUM_AREAS] = {
     { StorageRally,   3786,   150}, // 10 rally points
     { StorageFence,   3936,   160}, // 20 fence points
 #if STORAGE_NUM_AREAS >= 8
-    { StorageParam,   4096,  1280},
-    { StorageRally,   5376,   300},
+    { StorageParam,   4096,  1280}, // offset - length
+    { StorageRally,   5376,   300}, //
     { StorageFence,   5676,   256},
     { StorageMission, 5932,  2132}, 
     { StorageKeys,    8064,    64}, 
@@ -64,7 +64,7 @@ const StorageManager::StorageArea StorageManager::layout[STORAGE_NUM_AREAS] = {
 #endif
 #if STORAGE_NUM_AREAS == 11
     // optimised for lots of parameters for 15k boards with OSD
-    { StorageParam,    8192,  7168},
+    { StorageMission,    8192,  7168},
 #endif
 #if STORAGE_NUM_AREAS >= 12
     { StorageParam,    8192,  1280},
