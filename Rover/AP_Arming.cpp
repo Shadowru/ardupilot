@@ -147,7 +147,7 @@ bool AP_Arming_Rover::disarm(const AP_Arming::Method method)
     }
     if (rover.control_mode != &rover.mode_auto) {
         // reset the mission on disarm if we are not in auto
-        rover.mode_auto.mission.reset();
+        //rover.mode_auto.mission.reset();
     }
 
     update_soft_armed();
