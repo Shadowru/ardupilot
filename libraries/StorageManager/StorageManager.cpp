@@ -64,8 +64,8 @@ const StorageManager::StorageArea StorageManager::layout[STORAGE_NUM_AREAS] = {
 #endif
 #if STORAGE_NUM_AREAS == 11
     // optimised for lots of parameters for 15k boards with OSD
-    { StorageParam,    8192,  7168},
-//    { StorageMission,    8192,  7168},
+//    { StorageParam,    8192,  7168},
+    { StorageMission,    8192,  7168},
 #endif
 #if STORAGE_NUM_AREAS >= 12
     { StorageParam,    8192,  1280},
